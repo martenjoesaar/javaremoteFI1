@@ -23,8 +23,6 @@ public class FeniksEx {
                 System.out.println("Error command.");
             }
         }
-
-
     }
 }
 /*Write a simple "echo" application, that will:
