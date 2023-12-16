@@ -17,6 +17,7 @@ public class Task1Fibonacci {
             last = current;
 
             System.out.print(current + " ");
+
         }
     }
 }

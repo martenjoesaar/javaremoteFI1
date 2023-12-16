@@ -13,6 +13,5 @@ public class Task1 {
         Task1Fibonacci fibonacci = new Task1Fibonacci();
         fibonacci.printFibonacciSeries(inputF);
 
-
     }
 }
