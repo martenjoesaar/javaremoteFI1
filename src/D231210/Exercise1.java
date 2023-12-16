@@ -9,5 +9,6 @@ public class Exercise1 {
 
         System.out.println("Perimeter of a radius: " + resultPerimeter);
         System.out.printf("Perimeter: %f", resultPerimeter);
+
     }
 }
