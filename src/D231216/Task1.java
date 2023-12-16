@@ -9,6 +9,7 @@ public class Task1 {
         System.out.print("Fibonacci series: \n Enter an Integer: ");
         int inputF = scanner.nextInt();
 
+
         Task1Fibonacci fibonacci = new Task1Fibonacci();
         fibonacci.printFibonacciSeries(inputF);
 
