@@ -9,21 +9,21 @@ public class JoosepEx {
 
         int poscount = 0, negcount = 0, length = intArray.length;
 
-        int[] rearangeArray = new int[length];
+        int[] rearrangeArray = new int[length];
 
         for (int i = 0; i < length ; i++) {
             if (intArray[i] < 0) {
-                rearangeArray[(length-1) - negcount] = intArray[i];
+                rearrangeArray[(length-1) - negcount] = intArray[i];
                 negcount++;
             } else {
-                rearangeArray[poscount] = intArray[i];
+                rearrangeArray[poscount] = intArray[i];
                 poscount++;
 
             }
 
         }
 
-        System.out.println(Arrays.toString(rearangeArray));
+        System.out.println(Arrays.toString(rearrangeArray));
     }
 }
 /*
