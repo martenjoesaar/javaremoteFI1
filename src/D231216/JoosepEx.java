@@ -4,7 +4,6 @@ import java.util.Arrays;
 public class JoosepEx {
     public static void main(String[] args) {
 
-
         int[] intArray = new int[]{-5, -8, -2, 5, -8, -10, 19, 5, -38, 9};
 
         int poscount = 0, negcount = 0, length = intArray.length;
