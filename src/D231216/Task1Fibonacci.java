@@ -1,8 +1,6 @@
 package D231216;
 
 public class Task1Fibonacci {
-
-
     public void printFibonacciSeries (int input){
         System.out.printf("The fibonacci series of %d numbers: ", input);
 
