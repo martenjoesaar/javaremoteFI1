@@ -59,5 +59,4 @@ public class HW2V2Payment {
             }
         }
     }
-
 }
