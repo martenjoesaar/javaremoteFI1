@@ -8,10 +8,12 @@ import java.util.Locale;
 
 public class Task17Daydiff {
     public Task17Daydiff(String nextClassDateStr){
+        System.out.println(nextClassDateStr);
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
         formatter.withLocale(Locale.ENGLISH);
 
         LocalDate nextClassDate = LocalDate.parse(nextClassDateStr, formatter);
+        System.out.println(nextClassDate.getYear());
 
         Duration duration = Duration.between(LocalDateTime.now(), nextClassDate.atStartOfDay());
 

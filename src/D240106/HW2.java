@@ -41,7 +41,7 @@ public class HW2 {
             input = "finish";
         } else{
             System.out.println(); //New line to start next function in console more clearly.
-            System.out.println("Type 'continue' to start fuelling or 'finish' to cancel fuelling: ");
+            System.out.println("Press ENTER to start fuelling or 'finish' to cancel fuelling: ");
             input = scanner.nextLine();
         }
 
@@ -58,7 +58,7 @@ public class HW2 {
             System.out.println("Fuelling: " + "\nAmount: " + String.format("%.2f",fuelAmount) + " litres\n"
                     + "Cost: " + String.format("%.2f",fuelCost) + "€");
 
-            System.out.println("Type 'go' to add more fuel or 'finish' to stop: ");
+            System.out.println("Press ENTER to add more fuel or 'finish' to stop: ");
             input = scanner.nextLine();
         }
 
@@ -90,7 +90,7 @@ public class HW2 {
             while(returnAmount < 0){
                 System.out.println("Please provide " + String.format("%.2f", (-1 * returnAmount)) + "€");
                 double extraAmount = scanner.nextDouble();
-                returnAmount = returnAmount + extraAmount;
+                returnAmount += extraAmount;
                 if(returnAmount > 0){
                     System.out.println("Thank you for your purchase, returning "
                             + String.format("%.2f", returnAmount) + " €");

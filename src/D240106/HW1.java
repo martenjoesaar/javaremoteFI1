@@ -56,13 +56,34 @@ public class HW1 {
         System.out.printf("%s has written the longest poem!", bestAuthor.getSurname());
     }
     private static HW1Author getBestAuthor(HW1Poem[] poems){
-        int counter = 0;
+        //int counter = 0;
+        HW1Poem max= poems[0];
 
         for(int i = 0; i < poems.length; i++){
+            System.out.println("Max strophe numbers: " + max.getStropheNumbers());
+            System.out.println("For loop poems length: " + poems[i].getStropheNumbers());
+            System.out.println("i = " + i);
+            if(max.getStropheNumbers() < poems[i].getStropheNumbers() )
+                max = poems[i];
+            System.out.println("Max poem: " + max.getStropheNumbers());
+        }
+        return  max.getCreator();
+
+        /*
+        // First code from John
+        for(int i = 0; i < poems.length; i++){
+            System.out.println(poems[counter].getStropheNumbers());
+            System.out.println(poems[i].getStropheNumbers());
+            System.out.println(i);
+            System.out.println(counter);
             if(poems[counter].getStropheNumbers() < poems[i].getStropheNumbers());
             counter = i;
+            System.out.println(counter);
+
         }
         return poems[counter].getCreator();
+
+         */
     }
 }
 /*Write an application that consists of few classes:
